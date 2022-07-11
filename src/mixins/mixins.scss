@@ -14,7 +14,7 @@
     }
 
     @else {
-      @media only screen and #{inspect(map-get($map, $key))} {
+      @media only screen and (#{inspect(map-get($map, $key))}) {
         @content;
       }
     }
